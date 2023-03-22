@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import paper from './Picture1.jpg';
+import paper2 from './PictureInverted.jpg';
 import './styles.css';
 
 // function App() {
@@ -111,28 +112,27 @@ function App() {
 
   // Add a click event listener to the button
   const toggleMode = () => {
-    const currentMode = mode;
-    const newMode = currentMode === 'light' ? 'dark' : 'light';
+    const newMode = mode === 'light' ? 'dark' : 'light';
     localStorage.setItem('mode', newMode);
     setMode(newMode);
   };
 
   return (
-    <div className={`app ${mode}`}>
-      <header>
+    <div className={mode === 'dark' ? 'dark-mode' : 'light-mode'}>
+      <div>
       <div style= {{
       display: "flex",
       justifyContent: "center",
       height: "100vh",
       width: "100%",
       maxWidth: "100%",
-      backgroundImage:`url(${paper})`,
+      backgroundImage:`url(${mode === 'dark' ? paper2 : paper})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       position: "relative"}}>
         <div>
-          <header>
+          <div>
             <div style={{
               display: "flex",
               flexDirection: "column"
@@ -178,7 +178,7 @@ function App() {
               with an interest in full stack and back end dev. <br/><br/>My contacts and resume are linked
               below if you'd like to reach out!
             </div>
-          </header>
+          </div>
         </div>
 
         <div style={{
@@ -189,17 +189,14 @@ function App() {
           height: "500px",
           backgroundImage: "linear-gradient(to top, rgba(255,255,255,1) 5%,rgba(255,255,255,0) 100%)",
           zIndex: 1
-        }}></div>
+        }}/>
       </div>
-      <div className="App">
+      {/* <div className="App">
             <header className="App-header">
             </header>
-      </div>
+      </div> */}
         <button onClick={toggleMode}>Toggle Mode</button>
-      </header>
-      <main>
-        <p>Welcome to my website!</p>
-      </main>
+      </div>
     </div>
   );
 }
