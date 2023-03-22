@@ -8,6 +8,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import paper from './Picture1.jpg';
 import paper2 from './PictureInverted.jpg';
 import './styles.css';
+import button1 from './lightDark.png'
 
 // function App() {
 //   return (
@@ -147,7 +148,7 @@ function App() {
                 fontSize: "64px",
                 marginBottom: 0,
                 marginTop: "20px",
-                zIndex: 2}}>
+                zIndex: 3}}>
                 Daniel Thero
               </div>
               <div style= {{
@@ -157,7 +158,7 @@ function App() {
                 margin: "20px",
                 fontFamily: "NunitoSans",
                 fontSize: "32px",
-                zIndex: 2}}>
+                zIndex: 3}}>
                 Computer Engineer
               </div>
             </div>
@@ -171,13 +172,29 @@ function App() {
               fontFamily: "NunitoSansBold",
               fontSize: "18px",
               wordWrap: "break-word",
-              zIndex: 2
+              zIndex: 3
             }}>
               I'm a 4th year undergrad at uWaterloo,
               experienced with embedded systems and object oriented code,
               with an interest in full stack and back end dev. <br/><br/>My contacts and resume are linked
               below if you'd like to reach out!
             </div>
+            <button style={{
+              position: 'fixed',
+              left: 0,
+              bottom: 0,
+              backgroundImage: `url(${button1})`,
+              backgroundSize: 'cover',
+              width: '40px',
+              height: '40px',
+              padding: 0,
+              border: 'none',
+              margin: '20px',
+              backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+              zIndex: 1,
+              display: 'block'
+            }}
+            onClick={toggleMode}></button>
           </div>
         </div>
 
@@ -187,15 +204,16 @@ function App() {
           left: 0,
           width: "100%",
           height: "500px",
-          backgroundImage: "linear-gradient(to top, rgba(255,255,255,1) 5%,rgba(255,255,255,0) 100%)",
-          zIndex: 1
+          backgroundImage: mode === 'dark' ? "linear-gradient(to top, rgba(18,18,18,1) 0%,rgba(0,0,0,0) 100%)" : "linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)",
+          zIndex: '2 !important'
         }}/>
-      </div>
-      {/* <div className="App">
-            <header className="App-header">
-            </header>
-      </div> */}
-        <button onClick={toggleMode}>Toggle Mode</button>
+        </div>
+        <div className="App">
+          <header className="App-header" style={{
+            backgroundColor: mode === 'dark' ? "#121212" : "#ffffff"
+          }}>
+          </header>
+        </div>
       </div>
     </div>
   );
