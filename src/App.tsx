@@ -11,6 +11,8 @@ import button1 from './lightDark.png'
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import { useState, useEffect } from 'react';
+import lightArrow from './image.png'
+import darkArrow from './chevron-down-icon.png'
 
 function handleClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
   event.preventDefault();
@@ -39,19 +41,21 @@ function App() {
   };
 
   return (
+    <div>
     <div className={mode === 'dark' ? 'dark-mode' : 'light-mode'}>
       <div>
       <div style= {{
-      display: "flex",
-      justifyContent: "center",
-      height: "100vh",
-      width: "100%",
-      maxWidth: "100%",
-      backgroundImage:`url(${mode === 'dark' ? paper2 : paper})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      position: "relative"}}>
+        display: "flex",
+        justifyContent: "center",
+        height: "100vh",
+        width: "100%",
+        maxWidth: "100%",
+        backgroundImage:`url(${mode === 'dark' ? paper2 : paper})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        position: "relative"
+      }}>
         <div>
           <div>
             <div style={{
@@ -66,7 +70,6 @@ function App() {
                 height: "8%",
                 margin: "20px",
                 fontFamily: "NunitoSans",
-                // fontSize: "64px",
                 marginBottom: 0,
                 marginTop: "20px",
                 zIndex: 3}}>
@@ -113,32 +116,10 @@ function App() {
               border: 'none',
               margin: '20px',
               backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-              zIndex: '5',
+              zIndex: 3,
               display: 'block'
             }}
             onClick={toggleMode}></button>
-            <Link sx={{
-              bottom: 0,
-              position: 'absolute',
-              zIndex: 6
-            }}
-            href="#">Link</Link>
-            <Link sx={{
-              bottom: 0,
-              position: 'absolute',
-              zIndex: 6
-            }}
-            href="#" color="inherit">
-              {'color="inherit"'}
-            </Link>
-            <Link sx={{
-              bottom: 0,
-              position: 'absolute',
-              zIndex: 6
-            }}
-            href="#" variant="body2">
-              {'variant="body2"'}
-            </Link>
           </div>
         </div>
 
@@ -149,9 +130,10 @@ function App() {
           width: "100%",
           height: "500px",
           backgroundImage: mode === 'dark' ? "linear-gradient(to top, rgba(18,18,18,1) 0%,rgba(0,0,0,0) 100%)" : "linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)",
-          zIndex: '2'
+          zIndex: 0
         }}/>
         </div>
+
         <div className="App">
           <header className="App-header" style={{
             backgroundColor: mode === 'dark' ? "#121212" : "#ffffff"
@@ -159,6 +141,56 @@ function App() {
           </header>
         </div>
       </div>
+    </div>
+    <div style={{
+      width: '100%', // Adjust the width as needed
+      textAlign: 'center', // Center the child elements horizontally
+    }}>
+    <Link sx={{
+      bottom: "150px",
+      position: 'absolute',
+      zIndex: 3,
+      left: 0,
+      right: 0,
+      marginLeft: 'auto',
+      marginRight: 'auto'
+    }}
+    href="#">Link</Link>
+    <Link sx={{
+      bottom: "110px",
+      position: 'absolute',
+      zIndex: 3,
+      left: 0,
+      right: 0,
+      marginLeft: 'auto',
+      marginRight: 'auto'
+    }}
+    href="#" color="inherit">
+      {'color="inherit"'}
+    </Link>
+    <Link sx={{
+      bottom: "70px",
+      position: 'absolute',
+      zIndex: 3,
+      left: 0,
+      right: 0,
+      marginLeft: 'auto',
+      marginRight: 'auto'
+    }}
+    href="#" variant="body2">
+      {'variant="body2"'}
+    </Link>
+    <div style={{
+      left: 0,
+      right: 0,
+      marginLeft: 'auto',
+      marginRight: 'auto'
+    }}
+    className="downArrow bounce">
+      <img width="40" height="20" alt="" src={mode === 'dark' ? lightArrow : darkArrow} />
+    </div>
+    </div>
+
     </div>
   );
 }
