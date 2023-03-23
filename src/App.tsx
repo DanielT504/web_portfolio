@@ -4,98 +4,18 @@ import './App.css';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import paper from './Picture1.jpg';
 import paper2 from './PictureInverted.jpg';
 import './styles.css';
 import button1 from './lightDark.png'
-
-// function App() {
-//   return (
-//     <>
-//       <div style= {{
-//       display: "flex",
-//       justifyContent: "center",
-//       height: "100vh",
-//       width: "100%",
-//       maxWidth: "100%",
-//       backgroundImage:`url(${paper})`,
-//       backgroundSize: "cover",
-//       backgroundRepeat: "no-repeat",
-//       backgroundPosition: "center",
-//       position: "relative"}}>
-//         <div>
-//           <header>
-//             <div style={{
-//               display: "flex",
-//               flexDirection: "column"
-//             }}>
-//               <div style= {{
-//                 position: "absolute",
-//                 top: "0",
-//                 left: "0",
-//                 height: "8%",
-//                 margin: "20px",
-//                 fontFamily: "NunitoSans",
-//                 fontSize: "64px",
-//                 marginBottom: 0,
-//                 marginTop: "20px",
-//                 zIndex: 2}}>
-//                 Daniel Thero
-//               </div>
-//               <div style= {{
-//                 position: "absolute",
-//                 top: "9%",
-//                 left: "0",
-//                 margin: "20px",
-//                 fontFamily: "NunitoSans",
-//                 fontSize: "32px",
-//                 zIndex: 2}}>
-//                 Computer Engineer
-//               </div>
-//             </div>
-//             <div style={{
-//               position: "absolute",
-//               bottom: 0,
-//               right: 0,
-//               width: "150px",
-//               textAlign: "left",
-//               margin: "20px",
-//               fontFamily: "NunitoSansBold",
-//               fontSize: "18px",
-//               wordWrap: "break-word",
-//               zIndex: 2
-//             }}>
-//               I'm a 4th year undergrad at uWaterloo,
-//               experienced with embedded systems and object oriented code,
-//               with an interest in full stack and back end dev. <br/><br/>My contacts and resume are linked
-//               below if you'd like to reach out!
-//             </div>
-//           </header>
-//         </div>
-
-//         <div style={{
-//           position: "absolute",
-//           bottom: 0,
-//           left: 0,
-//           width: "100%",
-//           height: "500px",
-//           backgroundImage: "linear-gradient(to top, rgba(255,255,255,1) 5%,rgba(255,255,255,0) 100%)",
-//           zIndex: 1
-//         }}></div>
-//       </div>
-//       <div className="App">
-//             <header className="App-header">
-//             </header>
-//       </div>
-//       <button id="toggle-mode-btn">Toggle Mode</button>
-//     </>
-//   );
-// }
-
-// export default App;
-
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Link from '@mui/material/Link';
 import { useState, useEffect } from 'react';
+
+function handleClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+  event.preventDefault();
+  console.info('You clicked a breadcrumb.');
+}
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -138,20 +58,22 @@ function App() {
               display: "flex",
               flexDirection: "column"
             }}>
-              <div style= {{
+              <div className="name"
+                  style= {{
                 position: "absolute",
                 top: "0",
                 left: "0",
                 height: "8%",
                 margin: "20px",
                 fontFamily: "NunitoSans",
-                fontSize: "64px",
+                // fontSize: "64px",
                 marginBottom: 0,
                 marginTop: "20px",
                 zIndex: 3}}>
                 Daniel Thero
               </div>
-              <div style= {{
+              <div className= "job"
+                  style= {{
                 position: "absolute",
                 top: "9%",
                 left: "0",
@@ -191,10 +113,32 @@ function App() {
               border: 'none',
               margin: '20px',
               backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-              zIndex: 1,
+              zIndex: '5',
               display: 'block'
             }}
             onClick={toggleMode}></button>
+            <Link sx={{
+              bottom: 0,
+              position: 'absolute',
+              zIndex: 6
+            }}
+            href="#">Link</Link>
+            <Link sx={{
+              bottom: 0,
+              position: 'absolute',
+              zIndex: 6
+            }}
+            href="#" color="inherit">
+              {'color="inherit"'}
+            </Link>
+            <Link sx={{
+              bottom: 0,
+              position: 'absolute',
+              zIndex: 6
+            }}
+            href="#" variant="body2">
+              {'variant="body2"'}
+            </Link>
           </div>
         </div>
 
@@ -205,7 +149,7 @@ function App() {
           width: "100%",
           height: "500px",
           backgroundImage: mode === 'dark' ? "linear-gradient(to top, rgba(18,18,18,1) 0%,rgba(0,0,0,0) 100%)" : "linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)",
-          zIndex: '2 !important'
+          zIndex: '2'
         }}/>
         </div>
         <div className="App">
