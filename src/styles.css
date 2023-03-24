@@ -93,10 +93,6 @@ div {
   }
 }
 
-.front {
-
-}
-
 .background {
   display: flex;
   justify-content: center;
@@ -127,25 +123,49 @@ div {
 }
 
 .blurb {
-  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  text-align: left;
+  margin: 20px;
+  font-family: NunitoSansBold;
+  font-size: 18px;
+  word-wrap: break-word;
+  z-index: 3;
 }
 
-.lightDarkButton {
-
+.scroll {
+  width: 100%;
+  text-align: center;
 }
 
-.scroll{
-
+.experience {
+  bottom: 150px;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.experienceLink {
-
+.projects {
+  bottom: 110px;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.projectsLink {
-
-}
-
-.contactLink {
-
+.contact {
+  bottom: 70px;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }

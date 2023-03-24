@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import paper from './Picture1.jpg';
-import paper2 from './PictureInverted.jpg';
+import paper from './pictures/Picture1.jpg';
+import paper2 from './pictures/PictureInverted.jpg';
 import './styles.css';
-import button1 from './lightDark.png'
 import Link from '@mui/material/Link';
-import { useState, useEffect } from 'react';
-import lightArrow from './image.png'
-import darkArrow from './chevron-down-icon.png'
+import lightArrow from './pictures/image.png'
+import darkArrow from './pictures/chevron-down-icon.png'
 import DarkModeSwitch from './switch'
 
 type AppProps = {
@@ -16,7 +14,7 @@ type AppProps = {
 
 function App({mode}: AppProps) {
   return (
-    <div className="front">
+    <>
       <div className={mode === 'dark' ? 'dark-mode' : 'light-mode'}>
         <div className="title">
           <div className="name">
@@ -38,50 +36,19 @@ function App({mode}: AppProps) {
           }}/>
         </div>
 
-        <div className="scroll"
-        style={{
-          width: '100%',
-          textAlign: 'center',
-        }}>
-          <Link className="experienceLink"
-          href="#"
-          sx={{
-            bottom: "150px",
-            position: 'absolute',
-            zIndex: 3,
-            left: 0,
-            right: 0,
-            marginLeft: 'auto',
-            marginRight: 'auto'
-          }}>
+        <div className="scroll">
+          <Link className="experience"
+          href="#">
             Experience
           </Link>
 
-          <Link className="projectsLink"
-          href="#"
-          sx={{
-            bottom: "110px",
-            position: 'absolute',
-            zIndex: 3,
-            left: 0,
-            right: 0,
-            marginLeft: 'auto',
-            marginRight: 'auto'
-          }}>
+          <Link className="projects"
+          href="#">
             Projects
           </Link>
 
-          <Link className="contactLink"
-          href="#"
-          sx={{
-            bottom: "70px",
-            position: 'absolute',
-            zIndex: 3,
-            left: 0,
-            right: 0,
-            marginLeft: 'auto',
-            marginRight: 'auto'
-          }}>
+          <Link className="contact"
+          href="#">
             Contact
           </Link>
 
@@ -96,19 +63,7 @@ function App({mode}: AppProps) {
           </div>
         </div>
 
-        <div className="blurb"
-          style={{
-            position: "absolute",
-            bottom: 0,
-            right: 0,
-            width: "150px",
-            textAlign: "left",
-            margin: "20px",
-            fontFamily: "NunitoSansBold",
-            fontSize: "18px",
-            wordWrap: "break-word",
-            zIndex: 3
-          }}>
+        <div className="blurb">
             I'm a 4th year undergrad at uWaterloo,
             experienced with embedded systems and object oriented code,
             with an interest in full stack and back end dev. <br/><br/>My contacts and resume are linked
@@ -122,7 +77,7 @@ function App({mode}: AppProps) {
         }}>
         </header>
       </div>
-    </div>
+    </>
   );
 }
 
