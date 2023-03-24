@@ -9,21 +9,15 @@ div {
 }
 
 .name {
-  position: absolute;
   top: 0;
-  left: 0;
   height: 8%;
-  margin: 20px;
   font-size: 64px;
   margin-bottom: 0;
   margin-top: 20px;
 }
 
 .job {
-  position: absolute;
-  top: calc(8% + 40px);
-  left: 0;
-  margin: 20px;
+  top: 9%;
   font-size: 32px;
 }
 
@@ -99,3 +93,59 @@ div {
   }
 }
 
+.front {
+
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  margin: 20px;
+  font-family: NunitoSans;
+  z-index: 3;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 0;
+}
+
+.blurb {
+  
+}
+
+.lightDarkButton {
+
+}
+
+.scroll{
+
+}
+
+.experienceLink {
+
+}
+
+.projectsLink {
+
+}
+
+.contactLink {
+
+}
