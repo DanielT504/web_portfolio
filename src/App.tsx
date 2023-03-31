@@ -8,6 +8,8 @@ import lightArrow from './pictures/image.png'
 import darkArrow from './pictures/chevron-down-icon.png'
 import DarkModeSwitch from './switch'
 import Page2 from './page2'
+import Page3 from './page3'
+import Page4 from './page4'
 
 type AppProps = {
   mode: string;
@@ -27,7 +29,7 @@ function App({mode}: AppProps) {
   const listenToScroll = () => {
     const heightToHideFrom =
       getOffset(document.querySelector("pg2"));
-    // let heightToHideFrom = 200;
+      
     const winScroll = document.body.scrollTop ||
         document.documentElement.scrollTop;
   

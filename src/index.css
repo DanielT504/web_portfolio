@@ -23,3 +23,20 @@ code {
   font-weight: 1000;
   src: url('./NunitoSans/NunitoSans-Bold.ttf') format('truetype');
 }
+
+/* Create a custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width to your desired size */
+}
+
+/* Style the track */
+::-webkit-scrollbar-track {
+  background: #dddddd; /* Add a background color */
+}
+
+/* Style the thumb */
+::-webkit-scrollbar-thumb {
+  background-color: black; /* Add a background color */
+  border-radius: 6px; /* Round the corners */
+  border: 3px solid #dddddd; /* Add a border */
+}

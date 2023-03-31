@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import DarkModeSwitch from './switch';
 import Page2 from './page2';
+import Page3 from './page3'
+import Page4 from './page4'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -32,7 +34,20 @@ function Index () {
   };
 
   return (
-    <>
+    <div>
+      {/*here*/}
+      <div style={{
+          position: 'absolute',
+          zIndex: 3,
+          backgroundColor: 'rgba(0,0,0,0)',
+          height: 'calc(400vh - 30px)',
+          width: 'calc(100vw - 42px)',
+          top: '15px',
+          left: '15px',
+          bottom: '15px',
+          right: '27px',
+          border: mode === 'dark' ? '1px solid white' : '1px solid black'
+      }}/>
       <div className="lightDarkButton"
         style={{
           position: 'fixed',
@@ -50,9 +65,10 @@ function Index () {
       </div>
       
       <App mode={mode}/>
-
       <Page2 mode={mode}/>
-    </>
+      <Page3 mode={mode}/>
+      <Page4 mode={mode}/>
+    </div>
   );
 }
 
