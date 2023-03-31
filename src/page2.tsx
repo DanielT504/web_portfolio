@@ -52,7 +52,7 @@ function Page2({mode}: Page2Props) {
             variant="outlined">
                 {card("Department of National Defense (DND)",
                     "Defensive Cyber Operations Specialist",
-                    "Parsed and analyzed alert and activity logs from aircraft systems using an ELK stack.")}
+                    "Analyzed and parsed alert and activity logs from aircraft systems using an ELK stack.")}
             </Card>
             <Card sx={{
                 height: '400px',
@@ -72,7 +72,7 @@ function Page2({mode}: Page2Props) {
             variant="outlined">
                 {card("Ford Motor Company",
                     "Embedded Software Developer",
-                    "Developed C++ production code for 2022 Ford vehicles including developer debug commands and the improved reception of wireless NFC signals.")}
+                    "Developed C++ production code for 2022 Ford vehicles including the improved reception of wireless NFC signals and developer debug commands.")}
             </Card>
             <Card sx={{
                 height: '400px',
