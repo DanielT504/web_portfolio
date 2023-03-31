@@ -20,7 +20,7 @@ function Page3({mode}: Page3Props) {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center'
         }}>
-
+            
         </div>
     )
 }
