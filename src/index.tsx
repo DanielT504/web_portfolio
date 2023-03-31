@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import DarkModeSwitch from './switch';
+import Page2 from './page2';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,7 +13,7 @@ const root = ReactDOM.createRoot(
 function Index () {
   const [mode, setMode] = useState('light');
   const preferredMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  
+
   // Set the initial mode on mount
   useEffect(() => {
   const storedMode = localStorage.getItem('mode');
@@ -46,7 +47,11 @@ function Index () {
           display: 'block'
         }}>
         <DarkModeSwitch toggleFunction={toggleMode}/>
-      </div><App mode={mode}/>
+      </div>
+      
+      <App mode={mode}/>
+
+      <Page2 mode={mode}/>
     </>
   );
 }
