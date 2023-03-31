@@ -36,18 +36,10 @@ function Index () {
   return (
     <div>
       {/*here*/}
-      <div style={{
-          position: 'absolute',
-          zIndex: 3,
-          backgroundColor: 'rgba(0,0,0,0)',
-          height: 'calc(400vh - 30px)',
-          width: 'calc(100vw - 42px)',
-          top: '15px',
-          left: '15px',
-          bottom: '15px',
-          right: '27px',
+      <div className="border"
+        style={{
           border: mode === 'dark' ? '1px solid white' : '1px solid black'
-      }}/>
+        }}/>
       <div className="lightDarkButton"
         style={{
           position: 'fixed',
@@ -55,7 +47,7 @@ function Index () {
           bottom: 0,
           width: '40px',
           height: '40px',
-          padding: 0,
+          paddingBottom: '3vh',
           border: 'none',
           margin: '20px',
           zIndex: 3,
