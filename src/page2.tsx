@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './page2.css';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -12,7 +13,6 @@ import wloo from './pictures/output-onlinepngtools (1).png';
 
 function card(mode: string, job:string, title:string, description:string, imageSrc: string, imageWidth: number, imageHeight: number) {
     return (
-        <React.Fragment>
         <CardContent>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: '10px'}}>
             <img src={imageSrc} alt="card image" style={{width: `${imageWidth}px`, height: `${imageHeight}px`, marginRight: '10px'}}/>
@@ -27,7 +27,6 @@ function card(mode: string, job:string, title:string, description:string, imageS
                 {description}
                 </Typography>
         </CardContent>
-        </React.Fragment>
     )
 };
 
@@ -38,90 +37,87 @@ type Page2Props = {
 function Page2({mode}: Page2Props) {
     return (
         <div id="pg2"
+        className="pageTwo"
             style={{
             backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-            color: mode === 'light' ? "#121212" : "#ffffff",
-            display: 'flex',
-            alignItems: 'flex-start',
-            height: '100vh',
-            width: '100%',
-            maxWidth: '100%',
-            position: 'relative',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
+            color: mode === 'light' ? "#121212" : "#ffffff"
         }}>
-            <Box sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '20px',
-                width: '100%'
-            }}>
-                <Card sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    width: '320px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "Department of National Defense",
-                        "Defensive Cyber Operations Specialist",
-                        "Analyzed and parsed alert and activity logs from aircraft systems using an ELK stack.",
-                        dnd, 30, 38)}
-                </Card>
-                <Card sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    width: '320px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "Huawei Technologies Canada",
-                        "Real-Time Operating System (RTOS) Software Engineer",
-                        "Designed C++ and Python performance tests to research and implement optimizations for the unreleased HarmonyOS (aka HongMeng OS) 4.0 microkernel.",
-                        huawei, 45, 38)}
-                </Card>
-                <Card sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    width: '320px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "Ford Motor Company",
-                        "Embedded Software Developer",
-                        "Developed C++ production code for 2022 Ford vehicles including the improved reception of wireless NFC signals and developer debug commands.",
-                        ford, 66, 24)}
-                </Card>
-                <Card sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    width: '320px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "University of Waterloo",
-                        "Open-Source Developer",
-                        "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
-                        wloo, 40, 40)}
-                </Card>
-            </Box>
+            <Typography sx={{zIndex: '4', left: '0', right: '0', marginTop: '40px', marginLeft: 'auto', marginRight: 'auto', fontSize: 40, mb: 2, textAlign: "center", fontFamily: 'NunitoSans'}} color={mode === "dark" ? "white" : "black"}>
+                Experience
+            </Typography>
+
+            <Card className="card1"
+            sx={{
+                width: '320px',
+                minHeight: '175px',
+                zIndex: 3,
+                backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                borderColor: mode === 'dark' ? "#ffffff" : "#121212",
+                borderWidth: '2px',
+                borderStyle: 'solid',
+                marginLeft: 'auto',
+                marginRight: '50%'
+            }}    
+            variant="outlined">
+                {card(mode, "Department of National Defense",
+                    "Defensive Cyber Operations Specialist",
+                    "Analyzed and parsed alert and activity logs from aircraft systems using an ELK stack.",
+                    dnd, 30, 38)}
+            </Card>
+            <Card className="card2"
+            sx={{
+                width: '320px',
+                minHeight: '236px',
+                zIndex: 3,
+                backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                borderWidth: '2px', // Add border width
+                borderStyle: 'solid', // Add border style
+                marginLeft: '50%',
+                marginRight: 'auto'
+            }}    
+            variant="outlined">
+                {card(mode, "Huawei Technologies Canada",
+                    "Real-Time Operating System (RTOS) Software Engineer",
+                    "Designed C++ and Python performance tests to research and implement optimizations for the unreleased HarmonyOS (aka HongMeng OS) 4.0 microkernel.",
+                    huawei, 45, 38)}
+            </Card>
+            <Card className="card3"
+            sx={{
+                width: '320px',
+                minHeight: '201px',
+                zIndex: 3,
+                backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                borderWidth: '2px', // Add border width
+                borderStyle: 'solid', // Add border style
+                marginLeft: 'auto',
+                marginRight: '50%'
+            }}    
+            variant="outlined">
+                {card(mode, "Ford Motor Company",
+                    "Embedded Software Developer",
+                    "Developed C++ production code for 2022 Ford vehicles including the improved reception of wireless NFC signals and developer debug commands.",
+                    ford, 66, 24)}
+            </Card>
+            <Card className="card4"
+            sx={{
+                width: '320px',
+                minHeight: '197px',
+                zIndex: 3,
+                backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                borderWidth: '2px', // Add border width
+                borderStyle: 'solid', // Add border style
+                marginLeft: '50%',
+                marginRight: 'auto'
+            }}    
+            variant="outlined">
+                {card(mode, "University of Waterloo",
+                    "Open-Source Developer",
+                    "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
+                    wloo, 40, 40)}
+            </Card>
         </div>
     )
 }

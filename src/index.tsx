@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import DarkModeSwitch from './switch';
 import Page2 from './page2';
-import Page3 from './page3'
-import Page4 from './page4'
+import Page3 from './page3';
+import Page4 from './page4';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

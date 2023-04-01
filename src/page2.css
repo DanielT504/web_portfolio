@@ -1,0 +1,41 @@
+@media screen and (max-width: 850px) {
+      .card1, .card2, .card3, .card4 {
+        margin: 0 auto !important;
+      }
+}
+
+.pageTwo {
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 320px) {
+    .card1{
+        width: 240px;
+        min-height: 220px !important;
+    }
+
+    .card2{
+        width: 240px;
+        min-height: 301px !important;
+    }
+
+    .card3{
+        width: 240px;
+        min-height: 239px !important;
+    }
+
+    .card4{
+        width: 240px;
+        min-height: 219px !important;
+    }
+}
