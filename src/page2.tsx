@@ -11,7 +11,7 @@ import huawei from './pictures/output-onlinepngtools.png';
 import ford from './pictures/Ford-Motor-Company-Logo.png';
 import wloo from './pictures/output-onlinepngtools (1).png';
 
-function card(mode: string, job:string, title:string, description:string, imageSrc: string, imageWidth: number, imageHeight: number) {
+function card(mode: string, job:string, title:string, description:string, time:string, imageSrc: string, imageWidth: number, imageHeight: number) {
     return (
         <CardContent>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: '10px'}}>
@@ -20,8 +20,12 @@ function card(mode: string, job:string, title:string, description:string, imageS
                 {job}
                 </Typography>
             </div>
-                <Typography sx={{ fontSize: 14, mb: 2, textAlign: "center" }} color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"} gutterBottom>
+                <Typography sx={{ fontSize: 14, textAlign: "center" }} color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"}>
                 {title}
+                <br/>
+                </Typography>
+                <Typography sx={{ fontSize: 14, mb: 2, textAlign: "center" }} color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"} gutterBottom>
+                {time}
                 </Typography>
                 <Typography variant="body2" color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"} sx={{ textAlign: "center" }}>
                 {description}
@@ -49,7 +53,7 @@ function Page2({mode}: Page2Props) {
             <Card className="card1"
             sx={{
                 width: '320px',
-                minHeight: '175px',
+                minHeight: '196px',
                 zIndex: 3,
                 backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
                 borderColor: mode === 'dark' ? "#ffffff" : "#121212",
@@ -62,12 +66,13 @@ function Page2({mode}: Page2Props) {
                 {card(mode, "Department of National Defense",
                     "Defensive Cyber Operations Specialist",
                     "Analyzed and parsed alert and activity logs from aircraft systems using an ELK stack.",
+                    "Jan-Apr 2023",
                     dnd, 30, 38)}
             </Card>
             <Card className="card2"
             sx={{
                 width: '320px',
-                minHeight: '236px',
+                minHeight: '257px',
                 zIndex: 3,
                 backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
                 borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
@@ -80,12 +85,13 @@ function Page2({mode}: Page2Props) {
                 {card(mode, "Huawei Technologies Canada",
                     "Real-Time Operating System (RTOS) Software Engineer",
                     "Designed C++ and Python performance tests to research and implement optimizations for the unreleased HarmonyOS (aka HongMeng OS) 4.0 microkernel.",
+                    "May-Aug 2022",
                     huawei, 45, 38)}
             </Card>
             <Card className="card3"
             sx={{
                 width: '320px',
-                minHeight: '201px',
+                minHeight: '222px',
                 zIndex: 3,
                 backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
                 borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
@@ -98,12 +104,13 @@ function Page2({mode}: Page2Props) {
                 {card(mode, "Ford Motor Company",
                     "Embedded Software Developer",
                     "Developed C++ production code for 2022 Ford vehicles including the improved reception of wireless NFC signals and developer debug commands.",
+                    "Sep-Dec 2021",
                     ford, 66, 24)}
             </Card>
             <Card className="card4"
             sx={{
                 width: '320px',
-                minHeight: '197px',
+                minHeight: '218px',
                 zIndex: 3,
                 backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
                 borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
@@ -116,6 +123,7 @@ function Page2({mode}: Page2Props) {
                 {card(mode, "University of Waterloo",
                     "Open-Source Developer",
                     "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
+                    "Jan-Apr 2021",
                     wloo, 40, 40)}
             </Card>
         </div>

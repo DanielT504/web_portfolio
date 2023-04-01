@@ -20,22 +20,22 @@
 
 @media screen and (max-width: 320px) {
     .card1{
-        width: 240px;
-        min-height: 220px !important;
+        width: 240px !important;
+        min-height: 241px !important;
     }
 
     .card2{
-        width: 240px;
-        min-height: 301px !important;
+        width: 240px !important;
+        min-height: 322px !important;
     }
 
     .card3{
-        width: 240px;
-        min-height: 239px !important;
+        width: 240px !important;
+        min-height: 260px !important;
     }
 
     .card4{
-        width: 240px;
-        min-height: 219px !important;
+        width: 240px !important;
+        min-height: 240px !important;
     }
 }
