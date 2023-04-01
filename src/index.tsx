@@ -50,7 +50,7 @@ function Index () {
           paddingBottom: '3vh',
           border: 'none',
           margin: '20px',
-          zIndex: 3,
+          zIndex: 4,
           display: 'block'
         }}>
         <DarkModeSwitch toggleFunction={toggleMode}/>
