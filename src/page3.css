@@ -1,0 +1,41 @@
+@media screen and (max-width: 850px) {
+    .card5, .card6, .card7, .card8 {
+      margin: 0 auto !important;
+    }
+}
+
+.pageThree {
+  display: flex;
+  align-items: flex-start;
+  /* height: 100vh; */
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  .card5{
+      width: 240px !important;
+      min-height: 241px !important;
+  }
+
+  .card6{
+      width: 240px !important;
+      min-height: 322px !important;
+  }
+
+  .card7{
+      width: 240px !important;
+      min-height: 260px !important;
+  }
+
+  .card8{
+      width: 240px !important;
+      min-height: 240px !important;
+  }
+}

@@ -198,6 +198,7 @@ div {
   bottom: 150px;
   position: absolute;
   z-index: 3;
+  /* needs to be fixed */
   left: 0;
   right: 0;
   margin-left: auto;
@@ -208,6 +209,7 @@ div {
   bottom: 110px;
   position: absolute;
   z-index: 3;
+  /* needs to be fixed */
   left: 0;
   right: 0;
   margin-left: auto;
@@ -218,6 +220,7 @@ div {
   bottom: 70px;
   position: absolute;
   z-index: 3;
+  /* needs to be fixed */
   left: 0;
   right: 0;
   margin-left: auto;

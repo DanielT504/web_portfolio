@@ -45,6 +45,7 @@ code {
   position: absolute;
   z-index: 1;
   background-color: rgba(0,0,0,0);
+  /* needs to be fixed */
   height: calc(400vh - 30px);
   width: calc(100vw - 42px);
   top: 15px;
