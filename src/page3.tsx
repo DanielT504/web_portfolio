@@ -19,7 +19,7 @@ import systolic from './pictures/systolic.png';
 import ts from './pictures/TS.png';
 
 
-function card(mode: string, job:string, title:string, description:string, time:string, imageSrc: string, imageWidth: number, imageHeight: number) {
+function card(mode: string, title:string, description:string, imageSrc: string) {
     return (
         <CardContent sx={{ padding: '0 !important'}}>
             <CardMedia
@@ -27,12 +27,11 @@ function card(mode: string, job:string, title:string, description:string, time:s
                 image={imageSrc}
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                Lizard
+                <Typography gutterBottom variant="h5" component="div" color={mode === "dark" ? "white" : "black"}>
+                {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                <Typography variant="body2" color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"}>
+                {description}
                 </Typography>
             </CardContent>
         </CardContent>
@@ -77,11 +76,9 @@ function Page3({mode}: Page3Props) {
                     borderStyle: 'solid',
                 }}    
                 variant="outlined">
-                    {card(mode, "Department of National Defense",
-                        "Defensive Cyber Operations Specialist",
-                        "Analyzed and parsed alert and activity logs from aircraft systems using an ELK stack.",
-                        "Jan-Apr 2023",
-                        de1, 30, 38)}
+                    {card(mode, "Real-Time Executive",
+                        "This comprises of several multithreaded elements of a real-time operating system written mostly in C and ARM, including dynamic memory and task management, inter-task communication, and I/O.",
+                        de1)}
                 </Card>
                 <Card className="card6"
                 sx={{
@@ -94,11 +91,9 @@ function Page3({mode}: Page3Props) {
                     borderStyle: 'solid', // Add border style
                 }}    
                 variant="outlined">
-                    {card(mode, "Huawei Technologies Canada",
-                        "Real-Time Operating System (RTOS) Software Engineer",
-                        "Designed C++ and Python performance tests to research and implement optimizations for the unreleased HarmonyOS (aka HongMeng OS) 4.0 microkernel.",
-                        "May-Aug 2022",
-                        ts, 45, 38)}
+                    {card(mode, "Traveling Salesman Neural Network",
+                        "This relies on an MIT-licensed self-organizing map (an artificial neural network) to find a sub-optimal (near-optimal) solution to the classic traveling salesman problem, using population hotspot maps as sample data.",
+                        ts)}
                 </Card>
                 <Card className="card7"
                 sx={{
@@ -111,11 +106,9 @@ function Page3({mode}: Page3Props) {
                     borderStyle: 'solid', // Add border style
                 }}    
                 variant="outlined">
-                    {card(mode, "Ford Motor Company",
-                        "Embedded Software Developer",
-                        "Developed C++ production code for 2022 Ford vehicles including the improved reception of wireless NFC signals and developer debug commands.",
-                        "Sep-Dec 2021",
-                        mountain, 66, 24)}
+                    {card(mode, "Colorado Elevation Analysis",
+                        "text3",
+                        mountain)}
                 </Card>
                 <Card className="card8"
                 sx={{
@@ -128,11 +121,9 @@ function Page3({mode}: Page3Props) {
                     borderStyle: 'solid', // Add border style
                 }}    
                 variant="outlined">
-                    {card(mode, "University of Waterloo",
-                        "Open-Source Developer",
-                        "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
-                        "Jan-Apr 2021",
-                        database, 40, 40)}
+                    {card(mode, "MMA Statistic Database",
+                        "text4",
+                        database)}
                 </Card>
                 <Card className="card8"
                 sx={{
@@ -145,11 +136,9 @@ function Page3({mode}: Page3Props) {
                     borderStyle: 'solid', // Add border style
                 }}    
                 variant="outlined">
-                    {card(mode, "University of Waterloo",
-                        "Open-Source Developer",
-                        "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
-                        "Jan-Apr 2021",
-                        systolic, 40, 40)}
+                    {card(mode, "Systolic Matrix Multiplier",
+                        "text5",
+                        systolic)}
                 </Card>
                 <Card className="card8"
                 sx={{
@@ -162,11 +151,9 @@ function Page3({mode}: Page3Props) {
                     borderStyle: 'solid', // Add border style
                 }}    
                 variant="outlined">
-                    {card(mode, "University of Waterloo",
-                        "Open-Source Developer",
-                        "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
-                        "Jan-Apr 2021",
-                        maze, 40, 40)}
+                    {card(mode, "BFS Maze Solver",
+                        "text6",
+                        maze)}
                 </Card>
             </Box>
         </div>

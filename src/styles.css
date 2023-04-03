@@ -13,23 +13,29 @@ div {
 
  .experience {
   padding: 25px;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
+  transform: none !important;
+  left: 0 !important;
  }
 
  .projects {
   padding: 25px;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
+  transform: none !important;
+  left: 0 !important;
  }
 
  .contact {
   padding: 25px;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
+  transform: none !important;
+  left: 0 !important;
  }
 }
 
@@ -198,31 +204,25 @@ div {
   bottom: 150px;
   position: absolute;
   z-index: 3;
-  /* needs to be fixed */
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .projects {
   bottom: 110px;
   position: absolute;
   z-index: 3;
-  /* needs to be fixed */
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .contact {
   bottom: 70px;
   position: absolute;
   z-index: 3;
-  /* needs to be fixed */
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
