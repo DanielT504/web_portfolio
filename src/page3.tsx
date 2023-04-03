@@ -10,26 +10,31 @@ import dnd from './pictures/Canadian_Forces_emblem.svg.png';
 import huawei from './pictures/output-onlinepngtools.png';
 import ford from './pictures/Ford-Motor-Company-Logo.png';
 import wloo from './pictures/output-onlinepngtools (1).png';
+import CardMedia from '@mui/material/CardMedia';
+import database from './pictures/Database.png';
+import de1 from './pictures/DE1-SoC.png';
+import maze from './pictures/Maze.png';
+import mountain from './pictures/Mountain.png';
+import systolic from './pictures/systolic.png';
+import ts from './pictures/TS.png';
+
 
 function card(mode: string, job:string, title:string, description:string, time:string, imageSrc: string, imageWidth: number, imageHeight: number) {
     return (
-        <CardContent>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: '10px'}}>
-            <img src={imageSrc} alt="card image" style={{width: `${imageWidth}px`, height: `${imageHeight}px`, marginRight: '10px'}}/>
-                <Typography sx={{ fontSize: 14, textAlign: "center" }} color={mode === "dark" ? "white" : "black"}>
-                {job}
+        <CardContent sx={{ padding: '0 !important'}}>
+            <CardMedia
+                sx={{ height: 140 }}
+                image={imageSrc}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                Lizard
                 </Typography>
-            </div>
-                <Typography sx={{ fontSize: 14, textAlign: "center" }} color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"}>
-                {title}
-                <br/>
+                <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over 6,000
+                species, ranging across all continents except Antarctica
                 </Typography>
-                <Typography sx={{ fontSize: 14, mb: 2, textAlign: "center" }} color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"} gutterBottom>
-                {time}
-                </Typography>
-                <Typography variant="body2" color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"} sx={{ textAlign: "center" }}>
-                {description}
-                </Typography>
+            </CardContent>
         </CardContent>
     )
 };
@@ -49,7 +54,8 @@ function Page3({mode}: Page3Props) {
             <Typography sx={{zIndex: '4', left: '0', right: '0', marginTop: '160px', marginLeft: 'auto', marginRight: 'auto', fontSize: 40, mb: 2, textAlign: "center", fontFamily: 'NunitoSans'}} color={mode === "dark" ? "white" : "black"}>
                 Projects
             </Typography>
-            <Box sx={{
+            <Box className="box" 
+            sx={{
                 display: 'flex',
                 flexDirection: 'row',
                 margin: '0 auto',
@@ -57,7 +63,8 @@ function Page3({mode}: Page3Props) {
                 flexWrap: 'wrap',
                 justifyContent: 'center',
                 paddingLeft: '16px',
-                paddingRight: '28px'
+                paddingRight: '16px',
+                maxWidth: '1050px'
             }}>
                 <Card className="card5"
                 sx={{
@@ -74,7 +81,7 @@ function Page3({mode}: Page3Props) {
                         "Defensive Cyber Operations Specialist",
                         "Analyzed and parsed alert and activity logs from aircraft systems using an ELK stack.",
                         "Jan-Apr 2023",
-                        dnd, 30, 38)}
+                        de1, 30, 38)}
                 </Card>
                 <Card className="card6"
                 sx={{
@@ -91,7 +98,7 @@ function Page3({mode}: Page3Props) {
                         "Real-Time Operating System (RTOS) Software Engineer",
                         "Designed C++ and Python performance tests to research and implement optimizations for the unreleased HarmonyOS (aka HongMeng OS) 4.0 microkernel.",
                         "May-Aug 2022",
-                        huawei, 45, 38)}
+                        ts, 45, 38)}
                 </Card>
                 <Card className="card7"
                 sx={{
@@ -108,7 +115,7 @@ function Page3({mode}: Page3Props) {
                         "Embedded Software Developer",
                         "Developed C++ production code for 2022 Ford vehicles including the improved reception of wireless NFC signals and developer debug commands.",
                         "Sep-Dec 2021",
-                        ford, 66, 24)}
+                        mountain, 66, 24)}
                 </Card>
                 <Card className="card8"
                 sx={{
@@ -125,7 +132,41 @@ function Page3({mode}: Page3Props) {
                         "Open-Source Developer",
                         "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
                         "Jan-Apr 2021",
-                        wloo, 40, 40)}
+                        database, 40, 40)}
+                </Card>
+                <Card className="card8"
+                sx={{
+                    width: '320px',
+                    minHeight: '218px',
+                    zIndex: 3,
+                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                    borderWidth: '2px', // Add border width
+                    borderStyle: 'solid', // Add border style
+                }}    
+                variant="outlined">
+                    {card(mode, "University of Waterloo",
+                        "Open-Source Developer",
+                        "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
+                        "Jan-Apr 2021",
+                        systolic, 40, 40)}
+                </Card>
+                <Card className="card8"
+                sx={{
+                    width: '320px',
+                    minHeight: '218px',
+                    zIndex: 3,
+                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                    borderWidth: '2px', // Add border width
+                    borderStyle: 'solid', // Add border style
+                }}    
+                variant="outlined">
+                    {card(mode, "University of Waterloo",
+                        "Open-Source Developer",
+                        "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
+                        "Jan-Apr 2021",
+                        maze, 40, 40)}
                 </Card>
             </Box>
         </div>
