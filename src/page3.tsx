@@ -77,7 +77,7 @@ function Page3({mode}: Page3Props) {
                 }}    
                 variant="outlined">
                     {card(mode, "Real-Time Executive",
-                        "This comprises of several multithreaded elements of a real-time operating system written mostly in C and ARM, including dynamic memory and task management, inter-task communication, and I/O.",
+                        "This RTX is run on the DE1-SoC FPGA and is comprised of several multithreaded elements of a real-time operating system, written mostly in C and ARM. It includes dynamic memory and task management, inter-task communication, and I/O.",
                         de1)}
                 </Card>
                 <Card className="card6"
@@ -92,7 +92,7 @@ function Page3({mode}: Page3Props) {
                 }}    
                 variant="outlined">
                     {card(mode, "Traveling Salesman Neural Network",
-                        "This relies on an MIT-licensed self-organizing map (an artificial neural network) to find a sub-optimal (near-optimal) solution to the classic traveling salesman problem, using population hotspot maps as sample data.",
+                        "This Python artificial neural network relies on an MIT-licensed self-organizing map to find a near-optimal solution to the classic traveling salesman problem, using population hotspot maps as sample data (Qatar shown above).",
                         ts)}
                 </Card>
                 <Card className="card7"
@@ -107,7 +107,7 @@ function Page3({mode}: Page3Props) {
                 }}    
                 variant="outlined">
                     {card(mode, "Colorado Elevation Analysis",
-                        "text3",
+                        "This C++ program can aggregate and visualize elevation data (eg. these Colorado mountains), and iterates multiple least-work (greedy) algorithms to yield several optimal paths based on workload preferences.",
                         mountain)}
                 </Card>
                 <Card className="card8"
@@ -121,8 +121,8 @@ function Page3({mode}: Page3Props) {
                     borderStyle: 'solid', // Add border style
                 }}    
                 variant="outlined">
-                    {card(mode, "MMA Statistic Database",
-                        "text4",
+                    {card(mode, "NoSQL UFC Database",
+                        "This is a searchable, sortable, and editable database, modeled with NoSQL properties and written in C, made to store career statistics of MMA finalists.",
                         database)}
                 </Card>
                 <Card className="card8"
@@ -137,7 +137,7 @@ function Page3({mode}: Page3Props) {
                 }}    
                 variant="outlined">
                     {card(mode, "Systolic Matrix Multiplier",
-                        "text5",
+                        "This 2D systolic array can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA, that runs an embedded Linux stack and ships with Python APIs.",
                         systolic)}
                 </Card>
                 <Card className="card8"
@@ -152,7 +152,7 @@ function Page3({mode}: Page3Props) {
                 }}    
                 variant="outlined">
                     {card(mode, "BFS Maze Solver",
-                        "text6",
+                        "This breadth-first search algorithm was made in accompaniment with a DFS (depth-first search) maze solver, both of which can parse and display multicursal mazes of varying size, and animate the process of solution.",
                         maze)}
                 </Card>
             </Box>

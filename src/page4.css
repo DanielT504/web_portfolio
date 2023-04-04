@@ -1,0 +1,17 @@
+.pageFour {
+    display: flex;
+    align-items: center;
+    /* height: 100vh; */
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .resume-link:link {
+    text-decoration: none;
+  }
