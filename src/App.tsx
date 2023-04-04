@@ -72,6 +72,7 @@ function App({mode}: AppProps) {
         
         {isVisible &&
           <div className="scroll">
+            {/* link to respective sections */}
             <Link className="experience"
             style={{
               color: mode === 'dark' ? '#ffffff' : '#000000',
