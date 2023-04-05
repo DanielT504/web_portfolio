@@ -27,7 +27,7 @@ function Page4({mode}: Page4Props) {
                 }}>
 
                     <Typography sx={{zIndex: '3', left: '0', right: '0', marginTop: '160px', marginLeft: 'auto', marginRight: 'auto', fontSize: 40, mb: 2, textAlign: "center", fontFamily: 'NunitoSans'}} color={mode === "dark" ? "white" : "black"}>
-                        Contact
+                        Contactx
                     </Typography>
                     
                     <div style={{height: '20px'}}/>
