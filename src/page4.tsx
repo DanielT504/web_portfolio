@@ -7,7 +7,6 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import { Container, Typography } from '@mui/material';
 import {SocialIcon} from 'react-social-icons';
-// import Pdf from "%PUBLIC_URL%/resume.pdf";
 
 type Page4Props = {
     mode: string;
@@ -34,7 +33,7 @@ function Page4({mode}: Page4Props) {
                     <div style={{height: '20px'}}/>
 
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <a href="%PUBLIC_URL%/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <Button className="resume-link"
                             variant="outlined"
                             sx={{
