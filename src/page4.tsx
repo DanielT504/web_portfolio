@@ -33,7 +33,7 @@ function Page4({mode}: Page4Props) {
                     <div style={{height: '20px'}}/>
 
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                        <a href="https://www.danielthero.com/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <Button className="resume-link"
                             variant="outlined"
                             sx={{
