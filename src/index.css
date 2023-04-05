@@ -54,7 +54,7 @@ code {
   right: 27px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .border {
     width: calc(100vw - 30px);
     right: 15px;

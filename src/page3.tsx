@@ -44,118 +44,125 @@ type Page3Props = {
 
 function Page3({mode}: Page3Props) {
     return (
-        <div id="pg3"
+        <div
         className="pageThree"
             style={{
             backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
             color: mode === 'light' ? "#121212" : "#ffffff"
         }}>
-            <Typography sx={{zIndex: '4', left: '0', right: '0', marginTop: '160px', marginLeft: 'auto', marginRight: 'auto', fontSize: 40, mb: 2, textAlign: "center", fontFamily: 'NunitoSans'}} color={mode === "dark" ? "white" : "black"}>
-                Projects
-            </Typography>
-            <Box className="box" 
-            sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                margin: '0 auto',
-                gap: '20px',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                paddingLeft: '16px',
-                paddingRight: '16px',
-                maxWidth: '1050px'
+            <div className="border3"
+            style={{
+                border: mode === 'dark' ? '1px solid white' : '1px solid black',
             }}>
-                <Card className="card5"
+                <div style={{height: '100px'}}/>
+                <div id="pg3" style={{height: '40px'}}/>
+                <Typography sx={{zIndex: '4', left: '0', right: '0', marginTop: '0', marginLeft: 'auto', marginRight: 'auto', fontSize: 40, mb: 2, textAlign: "center", fontFamily: 'NunitoSans'}} color={mode === "dark" ? "white" : "black"}>
+                    Projects
+                </Typography>
+                <Box className="box" 
                 sx={{
-                    width: '320px',
-                    minHeight: '196px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212",
-                    borderWidth: '2px',
-                    borderStyle: 'solid',
-                }}    
-                variant="outlined">
-                    {card(mode, "Real-Time Executive",
-                        "This RTX is run on the DE1-SoC FPGA and is comprised of several multithreaded elements of a real-time operating system, written mostly in C and ARM. It includes dynamic memory and task management, inter-task communication, and I/O.",
-                        de1)}
-                </Card>
-                <Card className="card6"
-                sx={{
-                    width: '320px',
-                    minHeight: '257px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "Traveling Salesman Neural Network",
-                        "This Python artificial neural network relies on an MIT-licensed self-organizing map to find a near-optimal solution to the classic traveling salesman problem, using population hotspot maps as sample data (Qatar shown above).",
-                        ts)}
-                </Card>
-                <Card className="card7"
-                sx={{
-                    width: '320px',
-                    minHeight: '222px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "Colorado Elevation Analysis",
-                        "This C++ program can aggregate and visualize elevation data (eg. these Colorado mountains), and iterates multiple least-work (greedy) algorithms to yield several optimal paths based on workload preferences.",
-                        mountain)}
-                </Card>
-                <Card className="card8"
-                sx={{
-                    width: '320px',
-                    minHeight: '218px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "NoSQL UFC Database",
-                        "This is a searchable, sortable, and editable database, modeled with NoSQL properties and written in C, made to store career statistics of MMA finalists.",
-                        database)}
-                </Card>
-                <Card className="card8"
-                sx={{
-                    width: '320px',
-                    minHeight: '218px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "Systolic Matrix Multiplier",
-                        "This 2D systolic array can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA, that runs an embedded Linux stack and ships with Python APIs.",
-                        systolic)}
-                </Card>
-                <Card className="card8"
-                sx={{
-                    width: '320px',
-                    minHeight: '218px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                }}    
-                variant="outlined">
-                    {card(mode, "BFS Maze Solver",
-                        "This breadth-first search algorithm was made in accompaniment with a DFS (depth-first search) maze solver, both of which can parse and display multicursal mazes of varying size, and animate the process of solution.",
-                        maze)}
-                </Card>
-            </Box>
+                    display: 'flex',
+                    flexDirection: 'row',
+                    margin: '0 auto',
+                    gap: '20px',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    paddingLeft: '16px',
+                    paddingRight: '16px',
+                    maxWidth: '1050px'
+                }}>
+                    <Card className="card5"
+                    sx={{
+                        width: '320px',
+                        minHeight: '196px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212",
+                        borderWidth: '2px',
+                        borderStyle: 'solid',
+                    }}    
+                    variant="outlined">
+                        {card(mode, "Real-Time Executive",
+                            "This RTX is run on the DE1-SoC FPGA and is comprised of several multithreaded elements of a real-time operating system, written mostly in C and ARM. It includes dynamic memory and task management, inter-task communication, and I/O.",
+                            de1)}
+                    </Card>
+                    <Card className="card6"
+                    sx={{
+                        width: '320px',
+                        minHeight: '257px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                        borderWidth: '2px', // Add border width
+                        borderStyle: 'solid', // Add border style
+                    }}    
+                    variant="outlined">
+                        {card(mode, "Traveling Salesman Neural Network",
+                            "This Python artificial neural network relies on an MIT-licensed self-organizing map to find a near-optimal solution to the classic traveling salesman problem, using population hotspot maps as sample data (Qatar shown above).",
+                            ts)}
+                    </Card>
+                    <Card className="card7"
+                    sx={{
+                        width: '320px',
+                        minHeight: '222px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                        borderWidth: '2px', // Add border width
+                        borderStyle: 'solid', // Add border style
+                    }}    
+                    variant="outlined">
+                        {card(mode, "Colorado Elevation Analysis",
+                            "This C++ program can aggregate and visualize elevation data (eg. these Colorado mountains), and iterates multiple least-work (greedy) algorithms to yield several optimal paths based on workload preferences.",
+                            mountain)}
+                    </Card>
+                    <Card className="card8"
+                    sx={{
+                        width: '320px',
+                        minHeight: '218px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                        borderWidth: '2px', // Add border width
+                        borderStyle: 'solid', // Add border style
+                    }}    
+                    variant="outlined">
+                        {card(mode, "NoSQL UFC Database",
+                            "This is a searchable, sortable, and editable database, modeled with NoSQL properties and written in C, made to store career statistics of MMA finalists.",
+                            database)}
+                    </Card>
+                    <Card className="card8"
+                    sx={{
+                        width: '320px',
+                        minHeight: '218px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                        borderWidth: '2px', // Add border width
+                        borderStyle: 'solid', // Add border style
+                    }}    
+                    variant="outlined">
+                        {card(mode, "Systolic Matrix Multiplier",
+                            "This 2D systolic array can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA, that runs an embedded Linux stack and ships with Python APIs.",
+                            systolic)}
+                    </Card>
+                    <Card className="card8"
+                    sx={{
+                        width: '320px',
+                        minHeight: '218px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
+                        borderWidth: '2px', // Add border width
+                        borderStyle: 'solid', // Add border style
+                    }}    
+                    variant="outlined">
+                        {card(mode, "BFS Maze Solver",
+                            "This breadth-first search algorithm was made in accompaniment with a DFS (depth-first search) maze solver, both of which can parse and display multicursal mazes of varying size, and animate the process of solution.",
+                            maze)}
+                    </Card>
+                </Box>
+            </div>
         </div>
     )
 }

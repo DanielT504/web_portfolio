@@ -1,6 +1,5 @@
 .pageFour {
     display: flex;
-    align-items: center;
     /* height: 100vh; */
     width: 100%;
     max-width: 100%;
@@ -9,9 +8,44 @@
     background-repeat: no-repeat;
     background-position: center;
     flex-direction: column;
-    gap: 20px;
   }
 
   .resume-link:link {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 350px) {
+    .buffer {
+        height: 80px !important;
+    }
+  }
+
+  .buffer {
+    height: 20px;
+  }
+
+  .border4 {
+    position: static;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+    width: calc(100vw - 42px);
+    margin-left: 15px;
+    bottom: 15px !important;
+    /* height: 1000px; */
+    top: 100%;
+    border-top: none !important;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .border4 {
+      width: calc(100vw - 30px);
+      right: 15px;
+    }
+  }
+  
+  @media screen and (max-height: 400px) {
+    .border4 {
+      width: calc(100vw - 30px);
+      right: 15px;
+    }
   }

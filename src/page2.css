@@ -39,3 +39,31 @@
         min-height: 240px !important;
     }
 }
+
+.border2 {
+    position: static;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+    width: calc(100vw - 42px);
+    margin-left: 15px;
+    bottom: 15px !important;
+    right: 27px;
+    /* height: 1000px; */
+    top: 100%;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .border2 {
+      width: calc(100vw - 30px);
+      right: 15px;
+    }
+  }
+  
+  @media screen and (max-height: 400px) {
+    .border2 {
+      width: calc(100vw - 30px);
+      right: 15px;
+    }
+  }

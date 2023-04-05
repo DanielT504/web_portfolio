@@ -3,7 +3,8 @@ import './App.css';
 import paper from './pictures/Picture1.jpg';
 import paper2 from './pictures/PictureInverted.jpg';
 import './styles.css';
-import Link from '@mui/material/Link';
+import {Link} from 'react-scroll';
+import Link2 from '@mui/material/Link';
 import lightArrow from './pictures/image.png';
 import darkArrow from './pictures/chevron-down-icon.png';
 import DarkModeSwitch from './switch';
@@ -49,6 +50,11 @@ function App({mode}: AppProps) {
 
   return (
     <>
+      <div className="border1"
+      style={{
+        border: mode === 'dark' ? '1px solid white' : '1px solid black'
+      }}/>
+
       <div className={mode === 'dark' ? 'dark-mode' : 'light-mode'}>
         <div className="title">
           <div className="name">
@@ -72,33 +78,38 @@ function App({mode}: AppProps) {
         
         {isVisible &&
           <div className="scroll">
-            {/* link to respective sections */}
-            <Link className="experience"
+            <Link2 className="experience"
             style={{
               color: mode === 'dark' ? '#ffffff' : '#000000',
               textDecorationColor: mode === 'dark' ? '#ffffff' : '#000000'
             }}
             href="#">
-              Experience
-            </Link>
+              <Link to="pg2" smooth={true} duration={500}>
+                Experience
+              </Link>
+            </Link2>
 
-            <Link className="projects"
+            <Link2 className="projects"
             style={{
               color: mode === 'dark' ? '#ffffff' : '#000000',
               textDecorationColor: mode === 'dark' ? '#ffffff' : '#000000'
             }}
             href="#">
-              Projects
-            </Link>
+              <Link to="pg3" smooth={true} duration={750}>
+                Projects
+              </Link>
+            </Link2>
 
-            <Link className="contact"
+            <Link2 className="contact"
             style={{
               color: mode === 'dark' ? '#ffffff' : '#000000',
               textDecorationColor: mode === 'dark' ? '#ffffff' : '#000000'
             }}
             href="#">
-              Contact
-            </Link>
+              <Link to="pg4" smooth={true} duration={1000}>
+                Contact
+              </Link>
+            </Link2>
             
             <div className="downArrow bounce">
               <img width="40" height="20" alt="" src={mode === 'dark' ? lightArrow : darkArrow} />

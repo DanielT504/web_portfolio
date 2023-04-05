@@ -35,11 +35,10 @@ function Index () {
 
   return (
     <div>
-      {/*here*/}
-      <div className="border"
+      {/* <div className="border"
         style={{
           border: mode === 'dark' ? '1px solid white' : '1px solid black'
-        }}/>
+        }}/> */}
       <div className="lightDarkButton"
         style={{
           position: 'fixed',
