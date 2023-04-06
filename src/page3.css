@@ -61,9 +61,9 @@
     }
   }
   
-  @media screen and (max-height: 400px) {
+  /* @media screen and (max-height: 400px) {
     .border3 {
       width: calc(100vw - 30px);
       right: 15px;
     }
-  }
+  } */
