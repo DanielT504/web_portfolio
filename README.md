@@ -1,5 +1,5 @@
 # web_porfolio
 
-danielthero.com
+[danielthero.com](https://www.danielthero.com/)
 
 Uses React, Typescript, and Material UI
