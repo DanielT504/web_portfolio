@@ -105,7 +105,7 @@ function Page3({mode}: Page3Props) {
                     }}    
                     variant="outlined">
                         {card(mode, "Traveling Salesman Neural Network",
-                            "A Python Artificial Neural Network (ANN) that uses a Self-Organizing Map (SOM) to find a near-optimal solution to the classic traveling salesman problem. Supports populations of up to ~90,000 neurons.",
+                            "A Python Artificial Neural Network (ANN) that uses a Self-Organizing Map (SOM) to find a near-optimal solution to the classic traveling salesman problem. Supports populations of up to ~90,000 neurons. (Rwanda shown)",
                             rw)}
                     </Card>
                     <Card className="card7"
