@@ -17,6 +17,13 @@ import maze from './pictures/Maze.png';
 import mountain from './pictures/Mountain.png';
 import systolic from './pictures/systolic.png';
 import ts from './pictures/TS.png';
+import bb from './pictures/brewbuddy.png';
+import pso from './pictures/particle_swarm.gif';
+import maz from './pictures/maz.png';
+import sdk from './pictures/sudoku.gif';
+import rw from './pictures/rwanda.gif';
+import ch from './pictures/chess-bot.gif';
+import fydp from './pictures/fydp.jpg';
 
 
 function card(mode: string, title:string, description:string, imageSrc: string) {
@@ -84,7 +91,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Deep-Learning Classifier for Insulator Defects",
                             "A Convolutional Neural Network (CNN) using a pretrained model to classify preprocessed images of wet polymer insulators, predicting their age based on remaining surface hydrophobicity (size of water droplets).",
-                            de1)}
+                            fydp)}
                     </Card>
                     <Card className="card6"
                     sx={{
@@ -99,7 +106,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Traveling Salesman Neural Network",
                             "A Python Artificial Neural Network (ANN) that uses a Self-Organizing Map (SOM) to find a near-optimal solution to the classic traveling salesman problem. Supports populations of up to ~90,000 neurons.",
-                            ts)}
+                            rw)}
                     </Card>
                     <Card className="card7"
                     sx={{
@@ -114,7 +121,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Intelligent Chess Engine",
                             "An artificially intelligent chess agent that was built with an alpha-beta pruned minimax tree. Uses heuristic board evaluation (feasible up to a depth of 5-6) based on positional and structural incentives, capture potential, piece mobility, and material balance.",
-                            mountain)}
+                            ch)}
                     </Card>
                     <Card className="card8"
                     sx={{
@@ -128,10 +135,10 @@ function Page3({mode}: Page3Props) {
                     }}    
                     variant="outlined">
                         {card(mode, "Genetic Sudoku Solver",
-                            "An elitist Genetic Algorithm with adaptive mutation, single-point crossover, and tournament selection. Can solve most easy and medium level Sudokus in a short time, higher difficulty may lead it to local optima for several iterations before solving.",
-                            database)}
+                            "An elitist Genetic Algorithm with adaptive mutation, single-point crossover, and tournament selection. Solves for obvious squares first to minimize the search space, then converges in as few as 10 generations.",
+                            sdk)}
                     </Card>
-                    <Card className="card8"
+                    <Card className="card9"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -142,11 +149,11 @@ function Page3({mode}: Page3Props) {
                         borderStyle: 'solid',
                     }}    
                     variant="outlined">
-                        {card(mode, "particle",
-                            "This 2D systolic array can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA, that runs an embedded Linux stack and ships with Python APIs.",
-                            systolic)}
+                        {card(mode, "Particle Swarm Simulator",
+                            "A Particle Swarm Optimization (PSO) that mimics the social behavior of bird flocking and fish schooling to minimize a 3-dimensional sphere function. Uses star topology and random initialization.",
+                            pso)}
                     </Card>
-                    <Card className="card7"
+                    <Card className="card10"
                     sx={{
                         width: '320px',
                         minHeight: '222px',
@@ -157,11 +164,11 @@ function Page3({mode}: Page3Props) {
                         borderStyle: 'solid',
                     }}    
                     variant="outlined">
-                        {card(mode, "Colorado Elevation Analysis",
-                            "This C++ program can aggregate and visualize elevation data (eg. these Colorado mountains), and iterates multiple least-work (greedy) algorithms to yield several optimal paths based on workload preferences.",
+                        {card(mode, "Elevation Grid Path Finder",
+                            "A visualization of aggregated elevation data (Colorado mountain range shown) that iterates multiple greedy algorithms to find several optimal routes based on workload or altitude preferences.",
                             mountain)}
                     </Card>
-                    <Card className="card5"
+                    <Card className="card11"
                     sx={{
                         width: '320px',
                         minHeight: '196px',
@@ -172,11 +179,11 @@ function Page3({mode}: Page3Props) {
                         borderStyle: 'solid',
                     }}    
                     variant="outlined">
-                        {card(mode, "Real-Time Executive",
-                            "This RTX is run on the DE1-SoC FPGA and is comprised of several multithreaded elements of a real-time operating system, written mostly in C and ARM. It includes dynamic memory and task management, inter-task communication, and I/O.",
+                        {card(mode, "Mini Real-Time Operating System (RTOS)",
+                            "A Real-Time Executive written mostly in C and ARM, run on the DE1-SoC FPGA. It contains several multithreaded elements, including I/O, dynamic memory, task scheduling, and inter-task communication.",
                             de1)}
                     </Card>
-                    <Card className="card8"
+                    <Card className="card12"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -188,10 +195,10 @@ function Page3({mode}: Page3Props) {
                     }}    
                     variant="outlined">
                         {card(mode, "Systolic Matrix Multiplier",
-                            "This 2D systolic array can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA, that runs an embedded Linux stack and ships with Python APIs.",
+                            "A 2D systolic array that can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA. Runs an embedded Linux stack and ships with Python APIs.",
                             systolic)}
                     </Card>
-                    <Card className="card8"
+                    <Card className="card13"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -202,11 +209,11 @@ function Page3({mode}: Page3Props) {
                         borderStyle: 'solid',
                     }}    
                     variant="outlined">
-                        {card(mode, "BFS Maze Solver",
-                            "This breadth-first search algorithm was made in accompaniment with a DFS (depth-first search) maze solver, both of which can parse and display multicursal mazes of varying size, and animate the process of solution.",
-                            maze)}
+                        {card(mode, "BrewBuddy Android App",
+                            "A Kotlin/Java Android app with a Firebase DB to share and discover recipes for coffee and other beverages, including a store locator, recipe recommendation algorithm, a marketplace, and an upload/sharing feature.",
+                            bb)}
                     </Card>
-                    <Card className="card8"
+                    <Card className="card14"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -217,11 +224,11 @@ function Page3({mode}: Page3Props) {
                         borderStyle: 'solid',
                     }}    
                     variant="outlined">
-                        {card(mode, "Brewbuddy",
-                            "This breadth-first search algorithm was made in accompaniment with a DFS (depth-first search) maze solver, both of which can parse and display multicursal mazes of varying size, and animate the process of solution.",
-                            maze)}
+                        {card(mode, "Maze Multi-Solver",
+                            "A goal-based agent that parses and displays multicursal mazes of varying size, and animates the search process of the following methods: BFS, DFS, A*, Greedy, and IDDFS.",
+                            maz)}
                     </Card>
-                    <Card className="card8"
+                    <Card className="card15"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -233,7 +240,7 @@ function Page3({mode}: Page3Props) {
                     }}    
                     variant="outlined">
                         {card(mode, "NoSQL UFC Database",
-                            "This is a searchable, sortable, and editable database, modeled with NoSQL properties and written in C, made to store career statistics of MMA finalists.",
+                            "A searchable, sortable, and editable database, modeled with NoSQL properties and written in C, made to store career statistics of MMA finalists.",
                             database)}
                     </Card>
                 </Box>

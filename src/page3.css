@@ -1,5 +1,5 @@
 @media screen and (max-width: 850px) {
-    .card5, .card6, .card7, .card8 {
+    .card5, .card6, .card7, .card8 , .card9, .card10, .card11, .card12, .card13, .card14, .card15{
       margin: 0 auto !important;
     }
 }
@@ -18,7 +18,7 @@
   gap: 20px;
 }
 
-@media screen and (max-width: 364px) {
+/* @media screen and (max-width: 364px) {
   .card5{
       width: 240px !important;
       min-height: 241px !important;
@@ -38,7 +38,42 @@
       width: 240px !important;
       min-height: 240px !important;
   }
-}
+
+  .card9{
+    width: 240px !important;
+    min-height: 240px !important;
+  }
+
+  .card10{
+    width: 240px !important;
+    min-height: 240px !important;
+  }
+
+  .card11{
+    width: 240px !important;
+    min-height: 240px !important;
+  }
+
+  .card12{
+    width: 240px !important;
+    min-height: 240px !important;
+  }
+
+  .card13{
+    width: 240px !important;
+    min-height: 240px !important;
+  }
+
+  .card14{
+    width: 240px !important;
+    min-height: 240px !important;
+  }
+
+  .card15{
+    width: 240px !important;
+    min-height: 240px !important;
+  }
+} */
 
 .border3 {
     position: static;

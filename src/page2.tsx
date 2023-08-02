@@ -46,90 +46,88 @@ function Page2({mode}: Page2Props) {
             backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
             color: mode === 'light' ? "#121212" : "#ffffff"
         }}>
-            <div className="border3"
-            style={{
-                border: mode === 'dark' ? '1px solid white' : '1px solid black',
-            }}>
-                <Typography sx={{zIndex: '4', left: '0', right: '0', marginTop: '40px', marginLeft: 'auto', marginRight: 'auto', fontSize: 40, mb: 2, textAlign: "center", fontFamily: 'NunitoSans'}} color={mode === "dark" ? "white" : "black"}>
+            <div className="border3" style={{ border: mode === 'dark' ? '1px solid white' : '1px solid black' }}>
+                <Typography sx={{ zIndex: '4', left: '0', right: '0', marginTop: '40px', marginLeft: 'auto', marginRight: 'auto', fontSize: 40, mb: 2, textAlign: "center", fontFamily: 'NunitoSans' }} color={mode === "dark" ? "white" : "black"}>
                     Experience
                 </Typography>
-
-                <Card className="card1"
-                sx={{
-                    width: '320px',
-                    minHeight: '196px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212",
-                    borderWidth: '2px',
-                    borderStyle: 'solid',
-                    marginLeft: 'auto',
-                    marginRight: '50%'
-                }}    
-                variant="outlined">
-                    {card(mode, "Department of National Defense",
-                        "Defensive Cyber Operations Specialist",
-                        "Analyzed and parsed alert and activity logs from aircraft systems using an ELK stack.",
-                        "Jan-Apr 2023",
-                        dnd, 30, 38)}
-                </Card>
-                <Card className="card2"
-                sx={{
-                    width: '320px',
-                    minHeight: '257px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                    marginLeft: '50%',
-                    marginRight: 'auto'
-                }}    
-                variant="outlined">
-                    {card(mode, "Huawei Technologies Canada",
-                        "Real-Time Operating System (RTOS) Software Engineer",
-                        "Designed C++ and Python performance tests to research and implement optimizations for the unreleased HarmonyOS (aka HongMeng OS) 4.0 microkernel.",
-                        "May-Aug 2022",
-                        huawei, 45, 38)}
-                </Card>
-                <Card className="card3"
-                sx={{
-                    width: '320px',
-                    minHeight: '222px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                    marginLeft: 'auto',
-                    marginRight: '50%'
-                }}    
-                variant="outlined">
-                    {card(mode, "Ford Motor Company",
-                        "Embedded Software Developer",
-                        "Developed C++ production code for 2022 Ford vehicles including the improved reception of wireless NFC signals and developer debug commands.",
-                        "Sep-Dec 2021",
-                        ford, 66, 24)}
-                </Card>
-                <Card className="card4"
-                sx={{
-                    width: '320px',
-                    minHeight: '218px',
-                    zIndex: 3,
-                    backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
-                    borderColor: mode === 'dark' ? "#ffffff" : "#121212", // Change border color based on mode
-                    borderWidth: '2px', // Add border width
-                    borderStyle: 'solid', // Add border style
-                    marginLeft: '50%',
-                    marginRight: 'auto'
-                }}    
-                variant="outlined">
-                    {card(mode, "University of Waterloo",
-                        "Open-Source Developer",
-                        "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
-                        "Jan-Apr 2021",
-                        wloo, 40, 40)}
-                </Card>
+                <div className="card-container"> {}
+                    <Card className="card1"
+                    sx={{
+                        width: '238px',
+                        minHeight: '196px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212",
+                        borderWidth: '2px',
+                        borderStyle: 'solid',
+                        //marginLeft: 'auto',
+                        //marginRight: '50%'
+                    }}    
+                    variant="outlined">
+                        {card(mode, "Department of National Defense",
+                            "Defensive Cyber Operations Specialist",
+                            "Analyzed and parsed alert and activity logs from aircraft systems using an ELK stack.",
+                            "Jan-Apr 2023",
+                            dnd, 30, 38)}
+                    </Card>
+                    <Card className="card2"
+                    sx={{
+                        width: '238px',
+                        minHeight: '257px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212",
+                        borderWidth: '2px',
+                        borderStyle: 'solid',
+                        //marginLeft: '50%',
+                        //marginRight: 'auto'
+                    }}    
+                    variant="outlined">
+                        {card(mode, "Huawei Technologies Canada",
+                            "Real-Time Operating System (RTOS) Software Engineer",
+                            "Designed C++ and Python performance tests to research and implement optimizations for the unreleased HarmonyOS (aka HongMeng OS) 4.0 microkernel.",
+                            "May-Aug 2022",
+                            huawei, 45, 38)}
+                    </Card>
+                    <Card className="card3"
+                    sx={{
+                        width: '238px',
+                        minHeight: '222px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212",
+                        borderWidth: '2px',
+                        borderStyle: 'solid',
+                        //marginLeft: 'auto',
+                        //marginRight: '50%'
+                    }}    
+                    variant="outlined">
+                        {card(mode, "Ford Motor Company",
+                            "Embedded Software Developer",
+                            "Developed C++ production code for 2022 Ford vehicles including the improved reception of wireless NFC signals and developer debug commands.",
+                            "Sep-Dec 2021",
+                            ford, 66, 24)}
+                    </Card>
+                    <Card className="card4"
+                    sx={{
+                        width: '238px',
+                        minHeight: '218px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212",
+                        borderWidth: '2px',
+                        borderStyle: 'solid',
+                        //marginLeft: '50%',
+                        //marginRight: 'auto'
+                    }}    
+                    variant="outlined">
+                        {card(mode, "University of Waterloo",
+                            "Open-Source Developer",
+                            "Contributed functionality in Java to support JSON queries in the open-source Apache Drill SQL query engine.",
+                            "Jan-Apr 2021",
+                            wloo, 40, 40)}
+                    </Card>
+                </div> {}
             </div>
         </div>
     )
