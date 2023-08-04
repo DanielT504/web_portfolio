@@ -26,7 +26,7 @@ import ch from './pictures/chess-bot.gif';
 import fydp from './pictures/fydp.jpg';
 
 
-function card(mode: string, title:string, description:string, imageSrc: string) {
+function card(mode: string, title:string, description:string, imageSrc: string, link: string) {
     return (
         <CardContent sx={{ padding: '0 !important'}}>
             <CardMedia
@@ -35,7 +35,9 @@ function card(mode: string, title:string, description:string, imageSrc: string) 
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div" color={mode === "dark" ? "white" : "black"}>
-                {title}
+                    <a href={link} style={{ textDecoration: 'none', color: mode === "dark" ? "white" : "black" }}>
+                        {title}
+                    </a>
                 </Typography>
                 <Typography variant="body2" color={mode === "dark" ? "#C5C5C5" : "#8A8A8A"}>
                 {description}
@@ -91,7 +93,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Deep-Learning Classifier for Insulator Defects",
                             "A Convolutional Neural Network (CNN) using a pretrained model to classify preprocessed images of wet polymer insulators, predicting their age based on remaining surface hydrophobicity (size of water droplets).",
-                            fydp)}
+                            fydp, 'https://github.com/DanielT504/deep-learning-defect-detection')}
                     </Card>
                     <Card className="card6"
                     sx={{
@@ -106,7 +108,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Traveling Salesman Neural Network",
                             "A Python Artificial Neural Network (ANN) that uses a Self-Organizing Map (SOM) to find a near-optimal solution to the classic traveling salesman problem. Supports populations of up to ~90,000 neurons. (Rwanda shown)",
-                            rw)}
+                            rw, 'https://github.com/DanielT504/Neural-Network-TSP-SOM')}
                     </Card>
                     <Card className="card7"
                     sx={{
@@ -121,7 +123,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Intelligent Chess Engine",
                             "An artificially intelligent chess agent that was built with an alpha-beta pruned minimax tree. Uses heuristic board evaluation (feasible up to a depth of 5-6) based on positional and structural incentives, capture potential, piece mobility, and material balance.",
-                            ch)}
+                            ch, 'https://github.com/DanielT504/AI-Chess-Bot-2.0')}
                     </Card>
                     <Card className="card8"
                     sx={{
@@ -136,7 +138,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Genetic Sudoku Solver",
                             "An elitist Genetic Algorithm with adaptive mutation, single-point crossover, and tournament selection. Solves for obvious squares first to minimize the search space, then converges in as few as 10 generations.",
-                            sdk)}
+                            sdk, 'https://github.com/DanielT504/Genetic-Sudoku-Solver')}
                     </Card>
                     <Card className="card9"
                     sx={{
@@ -151,7 +153,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Particle Swarm Simulator",
                             "A Particle Swarm Optimization (PSO) that mimics the social behavior of bird flocking and fish schooling to minimize a 3-dimensional sphere function. Uses star topology and random initialization.",
-                            pso)}
+                            pso, 'https://github.com/DanielT504/Particle-Swarm-Sphere-Optimizer')}
                     </Card>
                     <Card className="card10"
                     sx={{
@@ -166,7 +168,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Elevation Grid Path Finder",
                             "A visualization of aggregated elevation data (Colorado mountain range shown) that iterates multiple greedy algorithms to find several optimal routes based on workload or altitude preferences.",
-                            mountain)}
+                            mountain, 'https://github.com/DanielT504/Cpp_Nifty_Mountain_Paths')}
                     </Card>
                     <Card className="card11"
                     sx={{
@@ -181,7 +183,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Mini Real-Time Operating System (RTOS)",
                             "A Real-Time Executive written mostly in C and ARM, run on the DE1-SoC FPGA. It contains several multithreaded elements, including I/O, dynamic memory, task scheduling, and inter-task communication.",
-                            de1)}
+                            de1, 'https://github.com/DanielT504')}
                     </Card>
                     <Card className="card12"
                     sx={{
@@ -196,7 +198,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Systolic Matrix Multiplier",
                             "A 2D systolic array that can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA. Runs an embedded Linux stack and ships with Python APIs.",
-                            systolic)}
+                            systolic, 'https://github.com/DanielT504')}
                     </Card>
                     <Card className="card13"
                     sx={{
@@ -211,7 +213,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "BrewBuddy Android App",
                             "A Kotlin/Java Android app with a Firebase DB to share and discover recipes for coffee and other beverages, including a store locator, recipe recommendation algorithm, a marketplace, and an upload/sharing feature.",
-                            bb)}
+                            bb, 'https://github.com/DanielT504/brew-buddy')}
                     </Card>
                     <Card className="card14"
                     sx={{
@@ -226,7 +228,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "Maze Multi-Solver",
                             "A goal-based agent that parses and displays multicursal mazes of varying size, and animates the search process of the following methods: BFS, DFS, A*, Greedy, and IDDFS.",
-                            maz)}
+                            maz, 'https://github.com/DanielT504')}
                     </Card>
                     <Card className="card15"
                     sx={{
@@ -241,7 +243,7 @@ function Page3({mode}: Page3Props) {
                     variant="outlined">
                         {card(mode, "NoSQL UFC Database",
                             "A searchable, sortable, and editable database, modeled with NoSQL properties and written in C, made to store career statistics of MMA finalists.",
-                            database)}
+                            database, 'https://github.com/DanielT504/C_Database_MMA')}
                     </Card>
                 </Box>
             </div>
