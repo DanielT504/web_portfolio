@@ -24,7 +24,7 @@ import sdk from './pictures/sudoku.gif';
 import rw from './pictures/rwanda.gif';
 import ch from './pictures/chess-bot.gif';
 import fydp from './pictures/fydp.jpg';
-
+import llm from './pictures/LLM.png';
 
 function card(mode: string, title:string, description:string, imageSrc: string, link: string) {
     return (
@@ -106,11 +106,26 @@ function Page3({mode}: Page3Props) {
                         borderStyle: 'solid',
                     }}    
                     variant="outlined">
+                        {card(mode, "Fine-Tuned LLM Code Translator using GPT-2",
+                            "A code converter from Python to JavaScript, focusing on their idiomatic structures. Uses a causal language model trained for 400 hours using the Hugging Face Transformers library, and can be generalized for translation between C++, C, C#, PHP, or Java.",
+                            llm, 'https://github.com/DanielT504/FineTuned-LLM-Code-Translator')}
+                    </Card>
+                    <Card className="card7"
+                    sx={{
+                        width: '320px',
+                        minHeight: '218px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212",
+                        borderWidth: '2px',
+                        borderStyle: 'solid',
+                    }}    
+                    variant="outlined">
                         {card(mode, "Traveling Salesman Neural Network",
                             "A Python Artificial Neural Network (ANN) that uses a Self-Organizing Map (SOM) to find a near-optimal solution to the classic traveling salesman problem. Supports populations of up to ~90,000 neurons. (Rwanda shown)",
                             rw, 'https://github.com/DanielT504/Neural-Network-TSP-SOM')}
                     </Card>
-                    <Card className="card7"
+                    <Card className="card8"
                     sx={{
                         width: '320px',
                         minHeight: '222px',
@@ -125,7 +140,7 @@ function Page3({mode}: Page3Props) {
                             "An artificially intelligent chess agent that was built with an alpha-beta pruned minimax tree. Uses heuristic board evaluation (feasible up to a depth of 5-6) based on positional and structural incentives, capture potential, piece mobility, and material balance.",
                             ch, 'https://github.com/DanielT504/AI-Chess-Bot-2.0')}
                     </Card>
-                    <Card className="card8"
+                    <Card className="card9"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -140,7 +155,7 @@ function Page3({mode}: Page3Props) {
                             "An elitist Genetic Algorithm with adaptive mutation, single-point crossover, and tournament selection. Solves for obvious squares first to minimize the search space, then converges in as few as 10 generations.",
                             sdk, 'https://github.com/DanielT504/Genetic-Sudoku-Solver')}
                     </Card>
-                    <Card className="card9"
+                    <Card className="card10"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -155,7 +170,7 @@ function Page3({mode}: Page3Props) {
                             "A Particle Swarm Optimization (PSO) that mimics the social behavior of bird flocking and fish schooling to minimize a 3-dimensional sphere function. Uses star topology and random initialization.",
                             pso, 'https://github.com/DanielT504/Particle-Swarm-Sphere-Optimizer')}
                     </Card>
-                    <Card className="card10"
+                    <Card className="card11"
                     sx={{
                         width: '320px',
                         minHeight: '222px',
@@ -170,7 +185,7 @@ function Page3({mode}: Page3Props) {
                             "A visualization of aggregated elevation data (Colorado mountain range shown) that iterates multiple greedy algorithms to find several optimal routes based on workload or altitude preferences.",
                             mountain, 'https://github.com/DanielT504/Cpp_Nifty_Mountain_Paths')}
                     </Card>
-                    <Card className="card11"
+                    <Card className="card12"
                     sx={{
                         width: '320px',
                         minHeight: '196px',
@@ -185,7 +200,7 @@ function Page3({mode}: Page3Props) {
                             "A Real-Time Executive written mostly in C and ARM, run on the DE1-SoC FPGA. It contains several multithreaded elements, including I/O, dynamic memory, task scheduling, and inter-task communication.",
                             de1, 'https://github.com/DanielT504')}
                     </Card>
-                    <Card className="card12"
+                    <Card className="card13"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -200,7 +215,7 @@ function Page3({mode}: Page3Props) {
                             "A 2D systolic array that can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA. Runs an embedded Linux stack and ships with Python APIs.",
                             systolic, 'https://github.com/DanielT504')}
                     </Card>
-                    <Card className="card13"
+                    <Card className="card14"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -215,7 +230,7 @@ function Page3({mode}: Page3Props) {
                             "A Kotlin/Java Android app with a Firebase DB to share and discover recipes for coffee and other beverages, including a store locator, recipe recommendation algorithm, a marketplace, and an upload/sharing feature.",
                             bb, 'https://github.com/DanielT504/brew-buddy')}
                     </Card>
-                    <Card className="card14"
+                    <Card className="card15"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -230,7 +245,7 @@ function Page3({mode}: Page3Props) {
                             "A goal-based agent that parses and displays multicursal mazes of varying size, and animates the search process of the following methods: BFS, DFS, A*, Greedy, and IDDFS.",
                             maz, 'https://github.com/DanielT504')}
                     </Card>
-                    <Card className="card15"
+                    <Card className="card16"
                     sx={{
                         width: '320px',
                         minHeight: '218px',

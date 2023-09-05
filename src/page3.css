@@ -1,5 +1,5 @@
 @media screen and (max-width: 850px) {
-    .card5, .card6, .card7, .card8 , .card9, .card10, .card11, .card12, .card13, .card14, .card15{
+    .card5, .card6, .card7, .card8 , .card9, .card10, .card11, .card12, .card13, .card14, .card15, .card16{
       margin: 0 auto !important;
     }
 }
@@ -70,6 +70,11 @@
   }
 
   .card15{
+    width: 240px !important;
+    min-height: 240px !important;
+  }
+
+  .card16{
     width: 240px !important;
     min-height: 240px !important;
   }
