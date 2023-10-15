@@ -120,8 +120,9 @@ function App({mode}: AppProps) {
         {isVisible &&
           <div className="blurb">
               I'm a 4th year undergrad at uWaterloo, 
-              experienced with OOP, backend/full-stack, 
-              and embedded systems, with a passion for AI/ML. <br/><br/>My contacts and resume are linked
+              with a passion for AI/ML,
+              experienced with OOP, backend/ full-stack, 
+              and embedded systems. <br/><br/>My contacts and resume are linked
               below if you'd like to reach out!
           </div>
         }
