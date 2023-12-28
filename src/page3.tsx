@@ -25,6 +25,7 @@ import rw from './pictures/rwanda.gif';
 import ch from './pictures/chess-bot.gif';
 import fydp from './pictures/fydp.jpg';
 import llm from './pictures/LLM.png';
+import dm from './pictures/dataMiner.png';
 
 function card(mode: string, title:string, description:string, imageSrc: string, link: string) {
     return (
@@ -196,11 +197,26 @@ function Page3({mode}: Page3Props) {
                         borderStyle: 'solid',
                     }}    
                     variant="outlined">
+                        {card(mode, "Data-Miner for Movie Suggestions",
+                            "A recommendation system that finds similar movies to the one selected, by extracting features from a SQL database of 3000 films. A sparse matrix of word frequencies determines the pairwise cosine similarities.",
+                            dm, 'https://github.com/DanielT504/Movie-rec-data-miner')}
+                    </Card>
+                    <Card className="card13"
+                    sx={{
+                        width: '320px',
+                        minHeight: '196px',
+                        zIndex: 3,
+                        backgroundColor: mode === 'dark' ? "#121212" : "#ffffff",
+                        borderColor: mode === 'dark' ? "#ffffff" : "#121212",
+                        borderWidth: '2px',
+                        borderStyle: 'solid',
+                    }}    
+                    variant="outlined">
                         {card(mode, "Mini Real-Time Operating System (RTOS)",
                             "A Real-Time Executive written mostly in C and ARM, run on the DE1-SoC FPGA. It contains several multithreaded elements, including I/O, dynamic memory, task scheduling, and inter-task communication.",
                             de1, 'https://github.com/DanielT504')}
                     </Card>
-                    <Card className="card13"
+                    <Card className="card14"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -215,7 +231,7 @@ function Page3({mode}: Page3Props) {
                             "A 2D systolic array that can perform matrix multiplication of NxN input streams, injected into a processing element on a PYNQ FPGA. Runs an embedded Linux stack and ships with Python APIs.",
                             systolic, 'https://github.com/DanielT504')}
                     </Card>
-                    <Card className="card14"
+                    <Card className="card15"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -230,7 +246,7 @@ function Page3({mode}: Page3Props) {
                             "A Kotlin/Java Android app with a Firebase DB to share and discover recipes for coffee and other beverages, including a store locator, recipe recommendation algorithm, a marketplace, and an upload/sharing feature.",
                             bb, 'https://github.com/DanielT504/brew-buddy')}
                     </Card>
-                    <Card className="card15"
+                    <Card className="card16"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
@@ -245,7 +261,7 @@ function Page3({mode}: Page3Props) {
                             "A goal-based agent that parses and displays multicursal mazes of varying size, and animates the search process of the following methods: BFS, DFS, A*, Greedy, and IDDFS.",
                             maz, 'https://github.com/DanielT504')}
                     </Card>
-                    <Card className="card16"
+                    <Card className="card17"
                     sx={{
                         width: '320px',
                         minHeight: '218px',
