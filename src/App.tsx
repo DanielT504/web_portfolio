@@ -127,7 +127,7 @@ function App({mode}: AppProps) {
           </div>
         }
       </div>
-      {/* empty page for scroll testing */}
+      {/* empty page for scroll testing  */}
       {/* <div className="App">
         <header className="App-header" style={{
           backgroundColor: mode === 'dark' ? "#121212" : "#ffffff"
