@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43e5658c.css",
+    "main.js": "/static/js/main.2bb4810b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/rwanda.gif": "/static/media/rwanda.133821b1a68349264564.gif",
+    "static/media/chess-bot.gif": "/static/media/chess-bot.71001f7c82decf351c38.gif",
+    "static/media/Canadian_Forces_emblem.svg.png": "/static/media/Canadian_Forces_emblem.svg.6a357ca39eb8bb57bdc9.png",
+    "static/media/Mountain.png": "/static/media/Mountain.41679474f1f651db59af.png",
+    "static/media/brewbuddy.png": "/static/media/brewbuddy.10794b41339528a30eb9.png",
+    "static/media/particle_swarm.gif": "/static/media/particle_swarm.219b04b47de072f7504e.gif",
+    "static/media/Ford-Motor-Company-Logo.png": "/static/media/Ford-Motor-Company-Logo.bdaa0e9e33360d85e41e.png",
+    "static/media/DE1-SoC.png": "/static/media/DE1-SoC.27215e3aa7221ff43086.png",
+    "static/media/Database.png": "/static/media/Database.8d6b64591eb1056428e9.png",
+    "static/media/NunitoSans-Bold.ttf": "/static/media/NunitoSans-Bold.022586a78ea7c9bee9da.ttf",
+    "static/media/NunitoSans-ExtraLight.ttf": "/static/media/NunitoSans-ExtraLight.1925a08bd6e9cc6486f6.ttf",
+    "static/media/systolic.png": "/static/media/systolic.c9cda0f669812b7155a4.png",
+    "static/media/fydp.jpg": "/static/media/fydp.7d94cbf78a360227f4d8.jpg",
+    "static/media/output-onlinepngtools.png": "/static/media/output-onlinepngtools.55e9d017417329ccbaca.png",
+    "static/media/Picture1.jpg": "/static/media/Picture1.bb3ae543d285a4725962.jpg",
+    "static/media/LLM.png": "/static/media/LLM.765eb59b30d7da475c1a.png",
+    "static/media/PictureInverted.jpg": "/static/media/PictureInverted.1c4d3f9b48466537fba3.jpg",
+    "static/media/dataMiner.png": "/static/media/dataMiner.4c16dd481fa976d1c386.png",
+    "static/media/output-onlinepngtools (1).png": "/static/media/output-onlinepngtools (1).48b2c460271c52a8b84d.png",
+    "static/media/maz.png": "/static/media/maz.cce9a7c4eb2e064b48af.png",
+    "static/media/sudoku.gif": "/static/media/sudoku.bb3c17bfa399910fa255.gif",
+    "index.html": "/index.html",
+    "main.43e5658c.css.map": "/static/css/main.43e5658c.css.map",
+    "main.2bb4810b.js.map": "/static/js/main.2bb4810b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43e5658c.css",
+    "static/js/main.2bb4810b.js"
+  ]
+}
