@@ -54,7 +54,7 @@ function Page4({mode}: Page4Props) {
                     <div style={{height: '20px'}}/>
 
                     <Container component="div" sx={{ display: "flex", justifyContent: "left", backgroundColor: mode === 'light' ? "#ffffff" : "#121212", flexDirection: "column"}} maxWidth = {false} id="contact">
-                    <Typography sx={{textAlign: "center", zIndex: '2'}}><SocialIcon fgColor="white" url="https://www.linkedin.com/in/danielthero/" />      <SocialIcon fgColor="white" url="https://github.com/DanielT504" />      <SocialIcon fgColor="white" url="mailto:dthero@uwaterloo.ca" /> </Typography>
+                    <Typography sx={{textAlign: "center", zIndex: '2'}}><SocialIcon fgColor="white" url="https://www.linkedin.com/in/danielthero/" />      <SocialIcon fgColor="white" url="https://github.com/DanielT504" />      <SocialIcon fgColor="white" url="mailto:daniel.thero@outlook.com" /> </Typography>
                     </Container>
 
                     <div className="buffer"/>

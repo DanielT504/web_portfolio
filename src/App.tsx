@@ -119,9 +119,8 @@ function App({mode}: AppProps) {
 
         {isVisible &&
           <div className="blurb">
-              I'm a 4th year undergrad at uWaterloo, 
-              with a passion for AI/ML,
-              experienced with OOP, backend/ full-stack, 
+              I'm a Computer Engineering new grad from uWaterloo
+              with a passion for AI/ML. I also have experience with OOP, backend/ full-stack, 
               and embedded systems. <br/><br/>My contacts and resume are linked
               below if you'd like to reach out!
           </div>
