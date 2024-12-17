@@ -243,7 +243,7 @@ function Page3({mode}: Page3Props) {
                     }}    
                     variant="outlined">
                         {card(mode, "BrewBuddy Android App",
-                            "A Kotlin/Java Android app with a Firebase DB to share and discover recipes for coffee and other beverages, including a store locator, recipe recommendation algorithm, a marketplace, and an upload/sharing feature.",
+                            "A React Native/Kotlin/Java app with a Firebase DB to share and discover recipes for coffee beverages, including a store locator, recipe recommendation algorithm, marketplace, and upload/sharing feature.",
                             bb, 'https://github.com/DanielT504/brew-buddy')}
                     </Card>
                     <Card className="card16"
