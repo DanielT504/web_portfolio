@@ -1,96 +1,119 @@
 .pageTwo {
-    display: flex;
-    align-items: flex-start;
-    /* height: 100vh; */
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  align-items: flex-start;
+  /* height: 100vh; */
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media screen and (max-width: 364px) {
-    .card0{
-      width: 240px !important;
-      min-height: 292px !important;
+  .card0{
+    width: 240px !important;
+    min-height: 322px !important;
   }
-  
-    .card1{
-        width: 240px !important;
-        min-height: 241px !important;
-    }
 
-    .card2{
-        width: 240px !important;
-        min-height: 322px !important;
-    }
+  .card1{
+    width: 240px !important;
+    min-height: 292px !important;
+  }
 
-    .card3{
-        width: 240px !important;
-        min-height: 260px !important;
-    }
+  .card2{
+      width: 240px !important;
+      min-height: 241px !important;
+  }
 
-    .card4{
-        width: 240px !important;
-        min-height: 240px !important;
-    }
+  .card3{
+      width: 240px !important;
+      min-height: 322px !important;
+  }
+
+  .card4{
+      width: 240px !important;
+      min-height: 260px !important;
+  }
+
+  .card5{
+      width: 240px !important;
+      min-height: 240px !important;
+  }
 }
 
 .border2 {
-    position: static;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0);
-    width: calc(100vw - 42px);
-    margin-left: 15px;
-    bottom: 15px !important;
-    right: 27px;
-    /* height: 1000px; */
-    top: 100%;
-    border-top: none !important;
-    border-bottom: none !important;
-  }
-  
-  @media screen and (max-width: 1000px) {
-    .border2 {
-      width: calc(100vw - 30px);
-      right: 15px;
-    }
-  }
+  position: static;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  width: calc(100vw - 42px);
+  margin-left: 15px;
+  bottom: 15px !important;
+  right: 27px;
+  /* height: 1000px; */
+  top: 100%;
+  border-top: none !important;
+  border-bottom: none !important;
+}
 
-  @media screen and (max-width: 1180px) {
-    .card0, .card1, .card2, .card3, .card4 {
-      /* min-width: 350px !important; */
-      max-width: 350px !important;
-      display: wrap !important;
-      margin: 0 auto !important;
-    }
+@media screen and (max-width: 1408px) and (min-width: 1181px) {
+  .card5 {
+    width: 238px !important;
+    flex: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0 20px;
+}
+
+@media screen and (max-width: 1180px) and (min-width: 945px) {
+  .card4, .card5 {
+    width: 238px !important;
+    flex: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-  
-  .card0, .card1, .card2, .card3, .card4 {
-    flex: 1;
-    min-width: 200px;
-    position: relative;
-    margin-bottom: 20px;
-    text-align: top;
+}
+
+@media screen and (max-width: 1000px) {
+  .border2 {
+    width: calc(100vw - 30px);
+    right: 15px;
   }
-  
-  .card0::before, .card1::before, .card2::before, .card3::before, .card4::before {
-    content: "";
-    display: block;
+}
+
+@media screen and (max-width: 1180px) {
+  .card0, .card1, .card2, .card3, .card4, .card5 {
+    /* min-width: 350px !important; */
+    max-width: 350px !important;
+    display: wrap !important;
+    margin: 0 auto !important;
   }
-  
-  .card-content {
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card0, .card1, .card2, .card3, .card4, .card5 {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: top;
+}
+
+.card0::before, .card1::before, .card2::before, .card3::before, .card4::before, .card5::before {
+  content: "";
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
